@@ -269,10 +269,10 @@ For example, if removeArtist is invoked with the artists array and the number 0,
 function removeArtist(array,index) {
   for (let i=0; i<array.length; i++) {
     if (array[i]=array[index]) {
-      return array.slice(index);
-  } 
+      array.splice(index,1);
+  } return array.length;
 }}
-console.log('task 5', "i'm on pause for now");
+console.log('task 5', removeArtist(artists,0));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -303,7 +303,7 @@ function addArtist(array) {
  return array;
 }
 
-console.log('task 6', addArtist(artists));
+console.log('task 6', 'compressed');
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
