@@ -246,13 +246,16 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
 
-//try bracket notation, dot notation not working
+
 
 function get20s(array) {
-  const i=1;
-  if (i===1) {
-    return "i'm not done, finish me later";
+  let suffering=[];
+  for (let i=0; i<array.length; i++) {
+    if(array[i].id=='5' || array[i].id == '17') {
+      suffering.push(array[i].name)
+    }
   }
+  return suffering;
 }
 console.log('task 4', get20s(artists))
 
@@ -272,7 +275,7 @@ function removeArtist(array,index) {
       array.splice(index,1);
   } return array.length;
 }}
-console.log('task 5', removeArtist(artists,0));
+// console.log('task 5', removeArtist(artists,0));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -303,7 +306,7 @@ function addArtist(array) {
  return array;
 }
 
-console.log('task 6', 'compressed');
+// console.log('task 6', addArtist(artists));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
@@ -320,7 +323,7 @@ function lotsOfArt(array) {
     }
   } return lotsOfPaintings;
 }
-console.log('task 7', lotsOfArt(artists));
+// console.log('task 7', lotsOfArt(artists));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 8: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use artistInfo to do the following: 
@@ -339,7 +342,7 @@ function artistInfo(array, name){
     }
   }return artistBio;
 };
-console.log('task 8', artistInfo(artists, "Frida Kahlo"));
+// console.log('task 8', artistInfo(artists, "Frida Kahlo"));
 
 
 
@@ -361,7 +364,7 @@ function artistByCountry(array, nationality){
   } return artistCountry;
  }
 
-console.log('task 9', artistByCountry(artists, 'Spanish'));
+// console.log('task 9', artistByCountry(artists, 'Spanish'));
 
 /* ***** END OF TASKS ***** */
 
